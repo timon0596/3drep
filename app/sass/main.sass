@@ -8,9 +8,29 @@ body
 	list-style: none	
 .dws-menu ul	
 	display: flex
-	justify-content: space-around
+	justify-content: center
 	text-transform: uppercase
-.dws-menu ul li a
+.dws-menu>ul>li>a
 	text-decoration: none
+	background: #ffffff
+	background: -moz-linear-gradient(top, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%)
+	background: -webkit-linear-gradient(top, #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%)
+	background: linear-gradient(to bottom, #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 )
+	padding: 5px 30px 15px 100px
+	font-size: 20px
+	color: #9d46db
+	border-radius: 5px
+	
+	
+.dws-menu>ul>li
+	position: relative
+	border-right: 2px solid #90C3D4
+.dws-menu>ul>li: first-child
+	border-left: 2px solid #90C3D4
+
+	
+	
+
 
 

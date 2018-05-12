@@ -1,31 +1,63 @@
-body {
-  background-color: #000;
-  color: #fff; }
+header {
+  margin-top: 200px; }
 
 .dws-menu * {
   margin: 0;
   padding: 0; }
 
-.dws-menu * {
+.dws-menu ul {
   list-style: none; }
 
-.dws-menu ul {
+.dws-menu > ul {
   display: flex;
-  justify-content: center;
-  text-transform: uppercase; }
+  justify-content: center; }
 
-.dws-menu > ul > li > a {
+.dws-menu > ul li a {
+  display: block;
+  background: #cdeb8e;
+  background: -moz-linear-gradient(top, #cdeb8e 0%, #a5c956 100%);
+  background: -webkit-linear-gradient(top, #cdeb8e 0%, #a5c956 100%);
+  background: linear-gradient(to bottom, #cdeb8e 0%, #a5c956 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdeb8e', endColorstr='#a5c956',GradientType=0 );
+  padding: 15px 30px 15px 40px;
   text-decoration: none;
-  background: #ffffff;
-  background: -moz-linear-gradient(top, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
-  background: -webkit-linear-gradient(top, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
-  background: linear-gradient(to bottom, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 );
-  padding: 5px 30px 15px 100px;
-  font-size: 20px;
-  color: #9d46db;
-  border-radius: 5px; }
+  text-transform: uppercase;
+  transition: all 0.2s ease; }
 
-.dws-menu > ul > li {
+.dws-menu > ul li {
   position: relative;
-  border-right: 2px solid #90C3D4; }
+  border-left: 1px solid #5fbf92; }
+
+.dws-menu > ul li:last-child {
+  border-right: 2px solid #5fbf92; }
+
+.dws-menu > ul li > a i.fa {
+  position: absolute;
+  top: 15px;
+  left: 12px; }
+
+.dws-menu li a:hover {
+  background: #69e56f;
+  color: #3daa41;
+  box-shadow: 1px 5px 40px -3px green;
+  transition: all 0.2s ease; }
+
+.dws-menu li ul {
+  position: absolute;
+  min-width: 162px;
+  display: none; }
+
+.dws-menu li > ul li {
+  border: 1px solid #5fbf92; }
+
+.dws-menu li > ul li a {
+  padding: 10px;
+  text-transform: none;
+  background: #cdeb8e;
+  background: -moz-linear-gradient(top, #cdeb8e 0%, #a5c956 100%);
+  background: -webkit-linear-gradient(top, #cdeb8e 0%, #a5c956 100%);
+  background: linear-gradient(to bottom, #cdeb8e 0%, #a5c956 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdeb8e', endColorstr='#a5c956',GradientType=0 ); }
+
+.dws-menu li:hover > ul {
+  display: block; }

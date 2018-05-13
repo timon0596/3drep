@@ -1,64 +1,70 @@
-header 
-	margin-top: 200px
-.dws-menu *
+body
 	margin: 0
 	padding: 0
-.dws-menu ul
-	list-style: none
-	
-.dws-menu > ul
-	display: flex
-	justify-content: center
-.dws-menu > ul li a
-	display: block
-	background: rgb(205,235,142)
-	background: -moz-linear-gradient(top, rgba(205,235,142,1) 0%, rgba(165,201,86,1) 100%)
-	background: -webkit-linear-gradient(top, rgba(205,235,142,1) 0%,rgba(165,201,86,1) 100%)
-	background: linear-gradient(to bottom, rgba(205,235,142,1) 0%,rgba(165,201,86,1) 100%)
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdeb8e', endColorstr='#a5c956',GradientType=0 )
-	padding: 15px 30px 15px 40px
+	font: 20px 
+	font-family: 'Corporation Games', sans-serif
+a
 	text-decoration: none
-	text-transform: uppercase
-	transition: all 0.2s ease
-.dws-menu > ul li
-	position: relative
-	border-left: 1px solid #5fbf92
-.dws-menu > ul li:last-child
-	border-right: 2px solid #5fbf92
-.dws-menu > ul li > a i.fa
-	position: absolute
-	top: 15px
-	left: 12px
-.dws-menu li a:hover
-	background: #69e56f
-	color: #3daa41
-	box-shadow: 1px 5px 40px -3px green
-	transition: all 0.2s ease
-//subsections
-.dws-menu li ul
-	position: absolute
-	min-width: 162px
-	display: none
-.dws-menu li > ul li
-	border: 1px solid #5fbf92
-.dws-menu li > ul li a
-	padding: 10px
-	text-transform: none
-	background: rgb(205,235,142)
-	background: -moz-linear-gradient(top, rgba(205,235,142,1) 0%, rgba(165,201,86,1) 100%)
-	background: -webkit-linear-gradient(top, rgba(205,235,142,1) 0%,rgba(165,201,86,1) 100%)
-	background: linear-gradient(to bottom, rgba(205,235,142,1) 0%,rgba(165,201,86,1) 100%)
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdeb8e', endColorstr='#a5c956',GradientType=0 )
-.dws-menu li:hover >ul
+ul
+	margin: 0
+	padding: 0
+	list-style: none
+
+.menu a
+	background: rgb(206,219,233)
+	background: -moz-linear-gradient(top, rgba(206,219,233,1) 0%, rgba(170,197,222,1) 17%, rgba(97,153,199,1) 50%, rgba(58,132,195,1) 51%, rgba(65,154,214,1) 59%, rgba(75,184,240,1) 71%, rgba(58,139,194,1) 84%, rgba(38,85,139,1) 100%)
+	background: -webkit-linear-gradient(top, rgba(206,219,233,1) 0%,rgba(170,197,222,1) 17%,rgba(97,153,199,1) 50%,rgba(58,132,195,1) 51%,rgba(65,154,214,1) 59%,rgba(75,184,240,1) 71%,rgba(58,139,194,1) 84%,rgba(38,85,139,1) 100%)
+	background: linear-gradient(to bottom, rgba(206,219,233,1) 0%,rgba(170,197,222,1) 17%,rgba(97,153,199,1) 50%,rgba(58,132,195,1) 51%,rgba(65,154,214,1) 59%,rgba(75,184,240,1) 71%,rgba(58,139,194,1) 84%,rgba(38,85,139,1) 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedbe9', endColorstr='#26558b',GradientType=0 )
+	color: #2300af
+	border: 1px solid #2300af
+	padding: 15px
 	display: block
+	transition: 0.25s all ease
+.side
+	width: 150px
+	padding: 10px
+.menu a:hover
+	background: rgb(30,87,153)
+	background: -moz-linear-gradient(top, rgba(30,87,153,1) 0%, rgba(41,137,216,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%)
+	background: -webkit-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%)
+	background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 )
+	padding: 15px 0px 15px  20px
+
+.submenu
+	position: relative
+
+.subsec
+	position: absolute
+	opacity: 0
+	
+	left: 100%
+	width: 100%
+	top: -10000px
+	
+
+
+.submenu:hover .subsec
+	opacity: 1
+	top: 0
+	transition: 0.8s opacity
+.submenu::after
+	content: " "
+	position: absolute
+	border: 10px solid
+	border-color: transparent transparent transparent transparent
+	top: 1em
+	right: 0
+.submenu:hover::after
+	border-color: transparent transparent transparent #2300af
+	transition: 0.5s ease
 
 
 
 
 
 
-
-
-
+	
 
 
